@@ -1,35 +1,40 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whiteboard</title>
-    
-    <!-- Diese Zeile verknüpft dein HTML mit der CSS-Datei -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <main class="app-shell">
+        <header class="hero">
+            <div class="hero-headline">
+                <img class="profile-img" src="usarmylogo.png" alt="MilitÃ¤risches Emblem">
+                <div>
+                    <p class="rank">National Guard Interface</p>
+                    <h1>Whiteboard Operations</h1>
+                    <p class="bio">Hier siehst du alle wichtigen Punkte sowie auch Abteilungen mit Ihren Informationen zu sich (Abteilungs Organigramm, etc.)</p>
+                </div>
+            </div>
+        </header>
 
-    <!-- Profil-Bereich -->
-    <img class="profile-img" src="usarmylogo.png" alt="Profilbild">
-    
-    <h1>Whiteboard</h1>
-    <p class="bio">Hier findest du alle wichtigen Links für die NG!</p>
-
-    <!-- Link-Buttons -->
-    <div class="link-container">
-        <a class="link-btn" href="#" target="_blank">Human Resources</a>
-        <a class="link-btn" href="#" target="_blank">Air Force</a>
-        <a class="link-btn" href="#" target="_blank">Military Police</a>
-        <a class="link-btn" href="#" target="_blank">Special Force</a>
-        <a class="link-btn" href="#" target="_blank">Waffenordnung</a>
-        <a class="link-btn" href="#" target="_blank">Kleiderordnung</a>
-        <a class="link-btn" href="#" target="_blank">Fuhrpark</a>
-        <a class="link-btn" href="https://docs.google.com/spreadsheets/d/1jDB-RVCpSOII4ryLJUsjusS35xolHLSHiQhLhvQ3LOM/edit?usp=sharing" target="_blank">Sanktionskatalog</a>
-        <a class="link-btn" href="https://ng.statescloud.de" target="_blank">State Conect</a>
-        <a class="link-btn" href="https://panel.statescloud.de" target="_blank">State Panel</a>
-        <a class="link-btn" href="https://forms.gle/FpC3n6kRpiqP3h3e7" target="_blank">Kummerkasten</a>
-    </div>
-
+        <section class="mission-map" aria-label="Interaktive Weltkarte fÃ¼r militÃ¤rische Operationsauswahl">
+            <div class="map-overlay">
+                <a class="mission-node n1" href="#" aria-label="Human Resources">👥<span class="tooltip-text">Human Resources</span></a>
+                <a class="mission-node n2" href="#" aria-label="Special Force">🎯<span class="tooltip-text">Special Force</span></a>
+                <a class="mission-node n3" href="#" aria-label="Fuhrpark">🚚<span class="tooltip-text">Fuhrpark</span></a>
+                <a class="mission-node n4" href="#" aria-label="Waffenordnung">🔫<span class="tooltip-text">Waffenordnung</span></a>
+                <a class="mission-node n5" href="https://docs.google.com/spreadsheets/d/1jDB-RVCpSOII4ryLJUsjusS35xolHLSHiQhLhvQ3LOM/edit?usp=sharing" aria-label="Sanktionskatalog">⚠️<span class="tooltip-text">Sanktionskatalog</span></a>
+                <a class="mission-node n6" href="#" aria-label="Military Police">🛡️<span class="tooltip-text">Military Police</span></a>
+                <a class="mission-node n7" href="https://forms.gle/VdVPSoxAqkjdctjC9" aria-label="Kummerkasten">🔐<span class="tooltip-text">Kummerkasten</span></a>
+                <a class="mission-node n8" href="#" aria-label="Air Force">✈️<span class="tooltip-text">Air Force</span></a>
+                <a class="mission-node n9" href="https://panel.statescloud.de" aria-label="State Panel">🛰️<span class="tooltip-text">State Panel</span></a>
+                <a class="mission-node n10" href="https://ng.statescloud.de" aria-label="State Conect">📡<span class="tooltip-text">State Conect</span></a>
+                <a class="mission-node n11" href="#" aria-label="Kleiderordnung">👔<span class="tooltip-text">Kleiderordnung</span></a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
