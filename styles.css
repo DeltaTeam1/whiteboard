@@ -230,5 +230,7 @@ h1 {
 .mission-node.n9 { left: 78%; top: 26%; }
 .mission-node.n10{ left: 86%; top: 32%; }
 .mission-node.n11{ left: 87%; top: 74%; }
+.mission-node.n12{ left: 20%; top: 58%; }
+.mission-node.n13{ left: 73%; top: 66%; }
 
 .mission-node .tooltip-text { z-index: 20; }
